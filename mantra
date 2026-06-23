@@ -1,7 +1,22 @@
-echo "# Fantacalcio" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/coseinutilidinorb/Fantacalcio.git
-git push -u origin main
+Fantacalcio/
+│
+├── data/
+│   ├── listone_2025_26.xlsx
+│   ├── giocatori.json
+│   └── ruoli.json
+│
+├── frontend/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
+│
+├── engine/
+│   ├── ranking.py
+│   ├── roster_optimizer.py
+│   ├── scarcity.py
+│   └── mantra_rules.py
+│
+├── docs/
+│   └── algoritmo.md
+│
+└── README.md
