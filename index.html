@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mantra AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mantra AI</h1>
+
+<div class="card">
+  <h2>Dashboard</h2>
+
+  <p>Crediti residui: <span id="credits">300</span></p>
+  <p>Giocatori acquistati: <span id="players">0</span></p>
+  <p>Modulo consigliato: <span id="module">--</span></p>
+</div>
+
+<div class="card">
+
+  <input
+    id="search"
+    type="text"
+    placeholder="Cerca giocatore..."
+  >
+
+  <button onclick="searchPlayer()">
+    Cerca
+  </button>
+
+</div>
+
+<div id="result"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
