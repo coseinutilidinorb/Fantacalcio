@@ -1,39 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mantra AI</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Mantra AI</h1>
+  <div class="container">
 
-<div class="card">
-  <h2>Dashboard</h2>
+    <h1>⚽ Mantra AI</h1>
 
-  <p>Crediti residui: <span id="credits">300</span></p>
-  <p>Giocatori acquistati: <span id="players">0</span></p>
-  <p>Modulo consigliato: <span id="module">--</span></p>
-</div>
+    <div class="dashboard">
 
-<div class="card">
+      <div class="card">
+        <h3>Crediti</h3>
+        <span id="credits">300</span>
+      </div>
 
-  <input
-    id="search"
-    type="text"
-    placeholder="Cerca giocatore..."
-  >
+      <div class="card">
+        <h3>Giocatori</h3>
+        <span id="players">0</span>
+      </div>
 
-  <button onclick="searchPlayer()">
-    Cerca
-  </button>
+      <div class="card">
+        <h3>Modulo</h3>
+        <span id="module">--</span>
+      </div>
 
-</div>
+    </div>
 
-<div id="result"></div>
+    <div class="search-box">
 
-<script src="app.js"></script>
+      <input
+        id="search"
+        type="text"
+        placeholder="Cerca giocatore..."
+      >
+
+      <button onclick="searchPlayer()">
+        Cerca
+      </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <div class="card">
+
+      <h2>Priorità attuale</h2>
+
+      <ul>
+        <li>Nico Paz</li>
+        <li>McTominay</li>
+        <li>Da Cunha</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
 
 </body>
 </html>
